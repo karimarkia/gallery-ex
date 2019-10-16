@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MineSweeper</title>
+</head>
+
+<body onload="init(4)" oncontextmenu="return false;">
+    <div class="wrap">
+        <span class="displayTime">0 Mins 0 Secs</span>
+        <div class="mode" onclick="resetBtn(this)"><span></span></div>
+        <div class="bestTime">Best time : <span> 0 </span> Sec</div>
+        <table border="2" cellpadding="11">
+            <tbody class="board"></tbody>
+        </table>
+
+        <button onclick="init(4)">Easy</button>
+        <button onclick="init(8)">Medium</button>
+        <button onclick="init(12)">Hard</button>
+        <br>
+        <button class="safeBtn" onclick="safeClick()">Safe Click</button>
+
+    </div>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

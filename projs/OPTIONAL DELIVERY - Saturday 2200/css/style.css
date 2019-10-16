@@ -1,0 +1,59 @@
+body {
+    margin: 20px 0 0 35%;
+    background-color: steelblue
+}
+
+.board td {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    transition: .5s;
+    background-color: gainsboro;
+}
+
+button {
+    font-size: 18px;
+    border-radius: 12px;
+    border: 2px solid rgb(143, 143, 143);
+    padding: 12px 28px;
+    transition: .3s;
+    margin: 10px;
+    outline: none;
+}
+
+button:hover {
+    background-color: rgb(15, 15, 15);
+    color: white;
+}
+
+.safeBtn {
+    margin-left: 127px;
+}
+
+.board td.shown {
+    background-color: rgb(255, 255, 255)
+}
+
+.board td:hover {
+    background-color: #a8e6edfa;
+}
+
+.board td.end-game-cell {
+    background-color: red
+}
+.board td.hinted {
+    outline:3px solid red;
+}
+
+.mode {
+    padding: 10px 0 10px 100px;
+}
+
+.bestTime {
+    font-size: 1.5em;
+
+}
+
+.displayTime {
+    font-size: 1.5em;
+}

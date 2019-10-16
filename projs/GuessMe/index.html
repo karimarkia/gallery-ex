@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Guess Me!</title>
+  <link rel="stylesheet" href="lib/bootstrap/bootstrap.css" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+
+<body>
+
+  <section class="game-start">
+    <h2>Think of Someone...</h2>
+    <button onclick="onStartGuessing()" class="ready btn btn-lg btn-success">I'm Ready!</button>
+  </section>
+
+  <section class="quest" style="display: none">
+    <h2></h2>
+    <div class="yes-no">
+      <button onclick="onUserResponse('yes')" class="answer btn btn-info">Yes</button>
+      <button onclick="onUserResponse('no')" class="answer btn btn-danger">No</button>
+    </div>
+  </section>
+
+  <section class="win" style="display: none">
+    <h2>Yes! I Knew it!</h2>
+    <button onclick="onRestartGame()" class="play-again btn btn-info">Play-Again</button>
+  </section>
+
+  <section class="new-quest" style="display: none">
+    <h2>OK, I gave up...</h2>
+
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="newGuess">You thought of: </label>
+        <input name="newGuess" type="txt" class="form-control" id="new-guess" placeholder="Your someone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="newQuest"> What can I ask?</label>
+        <input name="newQuest" type="txt" class="form-control" id="new-quest" placeholder="Which the answer is Yes"
+          required>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" onclick="onAddGuess();return false;" class="btn btn-info">
+          Make me Smarter!
+        </button>
+      </div>
+
+    </form>
+
+  </section>
+
+  <script src="lib/jquery/jquery.js"></script>
+  <script src="js/guessMe-service.js"></script>
+  <script src="js/guessMe-controller.js"></script>
+
+</body>
+
+</html>

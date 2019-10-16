@@ -1,0 +1,131 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #CB3066, #16BFFD);
+}
+
+.container {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+    margin: 100px auto;
+    margin-top: 200px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.btnAdd {
+    color: #FFF;
+    border: none;
+    position: relative;
+    height: 50px;
+    cursor: pointer;
+    font-size: 22px;
+    background-color: rgb(141, 176, 221);
+}
+
+.removeBtn {
+    background-color: #e74c3c;
+    height: 40px;
+    width: 0;
+    text-align: center;
+    margin-right: 5px;
+    display: inline-block;
+    color: whitesmoke;
+    transition: 0.3s linear;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1;
+}
+
+.filter-container,
+.sort-container {
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+.stat span {
+    color: orange;
+}
+
+.up,
+.down {
+    cursor: pointer;
+}
+
+.up:after {
+    content: '△';
+}
+
+.up:hover:after {
+    content: '▲';
+}
+
+.down:after {
+    content: '▽';
+}
+
+.down:hover:after {
+    content: '▼';
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: normal;
+    background-color: #2980b9;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    color: white;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease;
+}
+
+li {
+    background-color: #FFF;
+    line-height: 40px;
+    height: 40px;
+    color: #666;
+    transition: all 0.5s ease;
+}
+
+li:nth-child(2n) {
+    background-color: #f7f7f7;
+    transition: all 0.5s ease;
+}
+
+input {
+    font-size: 18px;
+    width: 100%;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    padding: 13px 13px 13px 20px;
+    color: #2980b9;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+input:focus {
+    background-color: #FFF;
+    border: 3px solid #2980b9;
+    outline: none;
+}
+
+.stat {
+    background-color: antiquewhite;
+    padding: 10px;
+    margin: 0;
+}

@@ -1,0 +1,55 @@
+body {
+  background-color: black;
+  color: white;
+  margin-left: 33%;
+  padding-top: 20px;
+}
+
+.cell {
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.formLine {
+  margin: 10px;
+  padding: 10px;
+  background-color: cornflowerblue;
+}
+
+
+.reset {
+  display: none;
+  font-size: 20px;
+  border-radius: 12px;
+  border: 2px solid rgb(143, 143, 143);
+  padding: 12px 28px;
+  transition: 0.3s;
+  margin-left: 18%;
+  margin-top: 10px;
+}
+
+.reset:hover {
+  background-color: rgb(15, 15, 15);
+  color: white;
+}
+
+h3 {
+  font-size: 25px;
+  margin-left: 20%;
+  margin-top: 10px;
+}
+
+.over {
+  font-size: 25px;
+  margin-left: 20%;
+  margin-top: 10px;
+}
+
+.win {
+  font-size: 25px;
+  margin-left: 20%;
+  margin-top: 10px;
+}
+
